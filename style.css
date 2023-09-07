@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  background: rgb(8, 27, 61);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.container1 {
+  display: flex;
+  height: 100%;
+}
+.container1 img {
+  height: 100%;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  margin-left: 2rem;
+}
+.container2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0 1.5rem;
+}
+.container2 input {
+  border-radius: 10px;
+  height: 40px;
+  width: 250px;
+}
+.container2 button {
+  border-radius: 6px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: white;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+}
+.bx.bx-search {
+  display: none;
+}
+.poster {
+  width: 100%;
+  position: relative;
+}
+.poster img {
+  width: 100%;
+  position: relative;
+  top: -60px;
+}
+.products_heading {
+  width: 100%;
+  text-align: center;
+}
+.products_heading hr {
+  margin: 1rem 0;
+}
+.card_container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  gap: 2.5rem 3rem;
+  flex-wrap: wrap;
+}
+.card_item {
+  min-width: 140px;
+  max-width: 200px;
+  width: 15%;
+}
+.card_item img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.card_item .details {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  background-color: rgb(8, 27, 61);
+}
+.footer_container1 {
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.part1 {
+  display: flex;
+  gap: 0 4rem;
+}
+.part1 ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+}
+.verticle_line {
+  height: 180px;
+  width: 2px;
+  background-color: rgb(173, 149, 149);
+  position: absolute;
+  top: 30px;
+  right: 18%;
+}
+.part2 {
+  width: 15%;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+}
+.list_heading {
+  color: rgb(173, 149, 149);
+  margin-bottom: 1rem;
+}
+.horizontal_line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(173, 149, 149, 0.6);
+}
+.footer_container2 {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sec2 {
+  color: rgba(173, 149, 149, 1);
+}
+.sec1 ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0 2rem;
+}
+.sec1 ul li {
+  display: flex;
+  gap: 0 0.5rem;
+}
+.sec1 ul li i {
+  color: rgb(247, 239, 5);
+}
+
+@media screen and (max-width: 426px) {
+  .header {
+    height: 50px;
+    padding: 0 1rem;
+  }
+  .container1 img {
+    width: 60px;
+    object-fit: contain;
+  }
+  .links {
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    gap: 0.6rem;
+  }
+  .container2 {
+    gap: 0.5rem;
+    position: relative;
+  }
+  .container2 input {
+    width: 120px;
+    height: 20px;
+    border: none;
+  }
+  .container2 .src_btn {
+    display: none;
+  }
+  .bx.bx-search {
+    display: flex;
+    color: rgb(48, 86, 192);
+    position: absolute;
+    right: 4px;
+    font-weight: 500;
+  }
+  .poster img {
+    top: 28px;
+  }
+  .products_heading {
+    margin-top: 30px;
+  }
+  .cards {
+    justify-content: space-evenly;
+  }
+  .card_item {
+    min-width: 120px;
+    width: 13%;
+  }
+  .footer_container1 {
+    flex-direction: column;
+  }
+  .verticle_line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    right: 0px;
+    top: 0px;
+    margin-top: 10px;
+  }
+  .part2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .list_heading {
+    margin-bottom: 5px;
+  }
+  .footer_container2 {
+    padding: 1rem 0.5rem;
+  }
+  .sec1 ul {
+    gap: 0 1rem;
+    font-size: 0.8rem;
+  }
+  .sec2 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 750px) {
+}
